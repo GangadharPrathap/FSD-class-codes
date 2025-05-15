@@ -1,0 +1,59 @@
+<!-- there is no class today only teach back sessions are conducted -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic vs Non-Semantic HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            gap: 50px;
+        }
+        section {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            text-align: center;
+        }
+        .box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Non-Semantic HTML -->
+    <section>
+        <h2>Non-Semantic HTML</h2>
+        <div class="box" style="background-color: #ffe4e1;">
+            <div class="header">This is a header</div>
+            <div class="nav">Navigation links go here</div>
+            <div class="content">
+                <div class="article">Main content of the page</div>
+                <div class="aside">Sidebar or additional info</div>
+            </div>r
+            <div class="footer">Footer information</div>
+        </div>
+    </section>
+
+    <!-- Semantic HTML -->
+    <section>
+        <h2>Semantic HTML</h2>
+        <div class="box" style="background-color: #e0ffff;">
+            <header>This is a header</header>
+            <nav>Navigation links go here</nav>
+            <main>
+                <article>Main content of the page</article>
+                <aside>Sidebar or additional info</aside>
+            </main>
+            <footer>Footer information</footer>
+        </div>
+    </section>
+
+</body>
+</html>

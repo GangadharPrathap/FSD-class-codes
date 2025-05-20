@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>20-05-2025</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            .Myheader{                            
+                color: brown;
+                background-color: chartreuse;
+            }.card{
+                height:200px;
+                width: 200px;
+                background-color: grey;
+                border: 1px dashed red;
+            }
+            strong,div{
+                color: maroon;
+                background-color: black;
+            }
+            .group .innnerchild p{
+                color:aliceblue;
+                background-color: rgb(34, 20, 20);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class ="Myheader">today topic</h1>
+
+        <p>Selectors</p>
+        <ol>
+            <li><b>* -> universal selectors</b></li>
+            <p>*{}this is a universal selector which removves the extra spaces betwen each lines</p>
+            <li><b>(class_name.)-> class Selector</b></li>
+            <h1 class="MyHeader">Class Selector</h1>
+            <p> the class slector is used to customise the interface of the respective data using (.)class name   </p>
+            <li><b>(#) -> Id Selector</b></li>
+            <h2 id="Myheader">My Id selector</h2>
+            <p>it is same as the class selector but instead of (.) we use (#) in the id Selector
+                and we have to main different ID for different tags.
+            </p>
+            <li><b> h1,p,div,.name -> group Selector></b></li>
+            <strong> we can modify multiple class names once at a time without any class or id names </strong>
+            <li><b>div p{} -> Nested selector</b></li>
+            <li><b>tag/element selector</b></li>
+        </ol>
+        <div class="card">
+            <img src="" alt="">
+            <p> this is my card-0 </p>
+            <p> </p>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <p> this is my card 1 </p>
+            <p> </p>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <p> this is my card 2</p>
+            <p> </p>
+        </div>
+        <p class="group">
+            <img src="" alt="">
+            <p class="innerchild">
+                <span>this is the benefit of the group selector </span>
+            </p>
+        </p>
+    </body>
+</html>
+
+
+<!-- HTML Rules:
+ 1. While using the Class selectors the name should be same for every class.
+ 2. while using the ID selectors we should make sure that every ID is different or unique-->

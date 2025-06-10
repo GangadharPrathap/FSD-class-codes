@@ -1,0 +1,19 @@
+.para{
+    color: darkblue;
+    text-decoration-line: underline;
+    direction: ltr;
+    text-decoration-style: dashed ;
+    text-decoration-thickness: 2px;
+}.list{
+    direction: ltr;   /*default ltr*/          
+    color: slategray;
+}.color1{
+    text-align: justify;
+    color: teal;
+}.color2{
+    color: rgb(255,0,0);
+}.color3{
+    color: #012fea;
+}.color4{
+    color: hsl(40,50%,70%)
+}

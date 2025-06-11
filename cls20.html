@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26-05-2025</title>
+    <style>
+        .parent1{
+            width: 100%;
+            height: 300px;
+            background-color: red;
+        }
+        .parent2 {
+            width: 100%;
+            height: 300px;
+            background-color: cyan;
+            /*position: relative; remove the comments for Absolute*/
+        }.parent3{
+            width: 100%;
+            height: 300px;
+            background-color: blanchedalmond;
+        }.child{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            top: 60px;
+            left: 140px;
+            bottom: 40px;
+            right: 30px;
+        }
+        .childe{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(142, 24, 24);
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        } 
+        .fixed{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(64, 30, 30);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }.parent4{
+            width: 100%;
+            height: 300px;
+            background-color: greenyellow;
+            position: sticky;
+            top: 10px;
+            border: 10px red dotted;
+        }.parent5{
+            width: 100%;
+            height: 300px;
+            background-color: pink;
+        }.parent6{
+            width: 100%;
+            height: 300px;
+            background-color: magenta;
+        }
+        .layer{
+            width: 100%;
+            height: 300px;
+            background-color: magenta;
+        }.p1{
+            width: 250px;
+            height: 200px;
+            background-color: red;
+            border: 3px solid black;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }.p2{
+            width: 250px;
+            height: 200px;
+            background-color: red;
+            border: 3px solid black;
+            position: absolute;
+            top: 150px;
+            right: 150px;
+        }.p3{
+            width: 250px;
+            height: 200px;
+            background-color: red;
+            border: 3px solid black;
+            position: absolute;
+             top: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Today's class topic : <b><u></u>Positions</u></b></h1>    
+    <label>Types of Postions in the CSS</label>
+    <ol>
+        <li>Realtive</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+        <li>Static</li>
+    </ol>
+    <label>Relative position</label>
+    <p>the relative position tag in the css ia used in order to modify the position of the respective div block according to the four parameters<br>
+    'top' 'bottom' 'left' 'right' even though we give the negative values.
+    <ul>
+        <li>top</li>
+        Here if top(+ve) it moves down for given value<br>
+        if top(-ve) it moves up for the given value
+        <li>Bottom</li>
+        Here if Bottom(+ve) it moves upward for given value<br>
+        if Bottom(-ve) it moves downward for the given value
+        <li>Left</li>
+        Here left(+ve) it moves right to given value <br>
+        if left(-ve) it moves left to the given value
+        <li>Right</li>
+        Here Right(+ve) it moves left to the given value<br>
+        if right(-ve) it moves to right to the given value
+    </ul></p>
+    <label>Absolute position</label>
+    <p> the absolute position is used to modify the position of the block inside a predefined relatively positioned color block from the corners </p>
+    <label>Fixed position</label>
+    <p>this tag is used in the css in order to prevent the movement of the block according to scrolling in the website</p>
+    <label>Sticky Position</label>
+    <p> The sticky Position is a combination of relative and fixed positions <br>
+    until the respective boundaries of the parent the block of the sticky position it acts like a relative Postion but once the div block crosses the boundary of the parent tag it acts like a fixed Postion </p>
+    <label>Static Position </label>
+    <p> the static is a position which has a default value for its position and cannot be having triggers like top left bottom right <br>
+    it cannot be moved directly </p>
+    <div class="parent1"></div>
+    <div class="parent4">
+        <div class="sticky"></div>
+    </div><div class="parent2">
+        <div class="child"></div>
+        <div class="childe"></div>
+    </div>
+    <div class="parent3">
+        <div class="fixed"></div>
+    </div>
+    
+    <div class="parent6">
+        <!-- <div class="static"></div> -->
+    </div>
+    <div class="parent5">
+        <!-- <div class="static"></div> -->
+    </div>
+    <h2>Topic-2:Layering</h2>
+    the layer is a process in which we arrange the items in a website so that we 
+    <div class="layer">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+    </div>
+</body>
+</html>

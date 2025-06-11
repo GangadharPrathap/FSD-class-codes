@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>30-05-2025</title>
+    <style>
+        .parent h1{
+            color:yellowgreen;
+        }
+        .parent + h1{
+            color: brown;
+        }
+        .parents >h1{background-color: aqua;}
+        
+        .parents + h1{color: cornflowerblue;}
+        .parents ~ h1{color: violet;}
+        .pseudo{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            color: black;
+        }.pseudo:hover{
+            border-radius: 25%;
+            background-color: wheat;
+        }
+        .active{
+            background-color: aqua;
+        }.active:active{
+            background-color: aquamarine;
+        }
+        div :nth-child(3){
+            color: brown ;
+        }
+        .demo{
+            color: red;
+            background-color: black;
+        }.lol{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Today's topic: 1.Combinators; 2. Pseudo class</h1>
+    <p>the combinators are:
+        <ul>
+            <li>'  ' it selects all the childs inside the parent which had to modified <br>
+            Syntax:
+            parent  p{
+<br>
+            }
+        </li>
+            <li>'>' this is used to select all the child which are in first level <br>
+            Syntax:
+        <br> parent > p{<br>
+
+        }
+        </li>
+            <li>'+' this is used to select the sibilings elements which exists right after the given elements(outside the div tag)<br>
+            Syntax:<br>
+            parent </li>
+            <li>'~' this is called tilt combinator which used to select all the sibiling elements which exists after the given elements</li>
+        </ul>
+    </p>
+    <h1>Top outer H1</h1>
+    <div class="parent">
+        <h1>first</h1>
+        <h1>Second</h1>
+        <div class="">
+            <h1>Inner child</h1>
+        </div>
+        <p>Third</p>
+    </div>
+    <h1>Bottom Outer H1</h1>
+    <div class="parents">
+        <h1>First</h1>
+        <h1>Second</h1>
+        <div class="">
+            <h1>Inner child 2</h1>
+        </div>
+        <h1>Third</h1>
+    </div>
+    <h1>Last outer h1</h1>
+    <h1>tilt operator</h1>
+    <div class="pseudo">
+    <p><b>PSEUDO CLASS</b> is like second class for secondary stylings def: when the user interacts with the block then the temporary stylings that are applied at that time are applied through the pseudo classes 
+    the pseudo classes are:<br>
+    <ul>
+        <li>Hover</li>
+        <li>Active</li>
+        <li>Focus</li>
+        <li>n<sup>th</sup>child</li>
+        <li>Not</li>
+    </ul>
+    </p></div>
+    <button class="active">Active</button>
+    <div>
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+    </div>
+    <h1 class="lol">First</h1>
+    <h1>Second</h1>
+    <h1>Third</h1>
+    <h1 class="demo">Fourth</h1>
+    <h1 class="demo">Fifth</h1>
+    <h1 class="demo">Sixth</h1>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.parent{
+    width: 100%;
+    
+    border: 5px solid black;
+    display: flex;
+    font-size: 40px;
+    flex-direction: row;/* there are other directions: row ,row-reverse,column-reverse*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}.flexbox{
+    width: 50%;
+    height: 50%;
+}
+.parent1{
+    width: 100%;
+    height: 150px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+}.parent2{
+    width: 100%;
+    height: 150px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.child1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.child2{
+    width: 150px;
+    height: 150px;
+    background-color: magenta;
+}
+.child3{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.child4{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.child5{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}

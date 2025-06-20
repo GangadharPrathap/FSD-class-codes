@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>12-06-2025</title>
+  <style>
+    * {
+      font-size: 25px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+
+    .trans, .ske , .sca, .rot{
+      display: flex;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .tranx, .trany, .skex, .skey , .scax, .scay, .rotx, .roty, .rotz{
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      border: 2px solid #000;
+      text-align: center;
+      line-height: 100px;
+      color: #000;
+    }
+    .tranx:hover{
+        transform: translateX(40px);
+    }.trany:hover{
+        transform: translateY(40px);
+    }.skex:hover{
+        transform: skewX(40deg);
+    }.skey:hover{
+        transform: SkewY(40deg);
+    }
+    .scax:hover{
+        transform: scaleX(1.1);
+    }.scay:hover{
+        transform: scaleY(1.1);
+    }.rotx:hover{
+        transform: rotateX(40deg);
+    }.roty:hover{
+        transform: rotateY(40deg);
+    }.rotz:hover{
+        transform: rotateZ(40deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Transformations</h1>
+
+  <div>
+    <p><strong>Transformation in CSS:</strong> A way to change an element’s size, position, rotation, or shape using the <code>transform</code> property.</p>
+    <p><strong>Types in Transformations:</strong></p>
+    <ol>
+      <li><u>Translate:</u> In transformations, to move elements left/right use <code>translateX()</code>, and for top/bottom use <code>translateY()</code>. You can also use <code>translate(x, y)</code>.</li>
+      <li><u>Skewness:</u> Skew bends an element at an angle. Use <code>skewX()</code> for horizontal skew, and <code>skewY()</code> for vertical. Values are given in degrees.</li>
+    
+  <div class="trans">
+    <div class="tranx">X</div>
+    <div class="trany">Y</div>
+  </div>
+
+  <div class="ske">
+    <div class="skex">SkewX</div>
+    <div class="skey">SkewY</div>
+  </div>
+    <li><u>Scale:</u>the scale is used in order to increase the dimensions of the block in terms of a factor that has been mentioned and it is declared as <code>Scale(x,y)</code> or it can be declared as <code>ScaleX()</code> to increase the width and <code>ScaleY()</code> to increase the height of it</li>
+  <div class="sca">
+    <div class="scax">scaleX</div>
+    <div class="scay">scaleY</div>
+  </div>
+  <li><u>Rotate:</u> the rotate() is used in order to apply rotations on the particular div tags or blocks and it accepts the values as degrees. It can be declared as <code>Rotate(x,y)</code> or it can be directly declared as <code>rotatex()</code>in order to bend back or front , <code>rotatey()</code> in order to left and right ,and <code>rotatez()</code> in order to rotate clockwise or anticlockwise</li>
+  <div class="rot">
+    <div class="rotx">rotate X</div>
+    <div class="roty">rotate Y</div>
+    <div class="rotz">rotate Z</div>
+  </div>
+  <li><u>Matrix:</u> it is a comboination of all the above parameters <code>matrix(a,b,c,d,e,x,y)</code> where as <ul><li>a- scaleX</li><li>b- skewY</li><li>c - skewX</li><li>d - scaleY</li> <li>x - translateX</li><li>y - TranslateY</li></ul></li>
+
+  </ol>
+  </div>
+
+</body>
+</html>
